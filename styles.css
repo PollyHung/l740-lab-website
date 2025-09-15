@@ -1,0 +1,1138 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Gochi+Hand&family=Handlee:wght@400;700&family=Caveat+Brush&family=Gloria+Hallelujah&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Handlee', cursive;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #F6EFD2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+.header {
+    background: #E2DDB4;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.university-logo {
+    height: 50px;
+    width: auto;
+}
+
+.lab-info h1 {
+    font-family: 'Rock Salt', cursive;
+    color: #E43636;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.dept-name {
+    font-family: 'Gochi Hand', cursive;
+    color: #000000;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #E43636;
+}
+
+/* Data Exploration Button Special Styling */
+.data-exploration-btn {
+    background: #E43636 !important;
+    color: #F6EFD2 !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-family: 'Caveat Brush', cursive !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 2px 8px rgba(228, 54, 54, 0.3) !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid #E43636 !important;
+}
+
+.data-exploration-btn:hover {
+    background: #F6EFD2 !important;
+    color: #E43636 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(228, 54, 54, 0.4) !important;
+}
+
+/* Hero Section */
+.hero {
+    background: #E2DDB4;
+    color: #000000;
+    padding: 8rem 0 4rem;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #E43636;
+}
+
+.hku-emblem {
+    height:0px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.dept-logo {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.hero-subtitle {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #E43636;
+    line-height: 1.8;
+}
+
+.hero-description {
+    font-family: 'Handlee', cursive;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    font-family: 'Caveat Brush', cursive;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #E43636;
+    color: #F6EFD2;
+}
+
+.btn-primary:hover {
+    background: #000000;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.btn-secondary:hover {
+    background: #000000;
+    color: #F6EFD2;
+}
+
+/* Sections */
+.section {
+    padding: 5rem 0;
+}
+
+.bg-light {
+    background-color: #F6EFD2;
+}
+
+.section h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #E43636;
+}
+
+.section h2.gloria-title {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+/* About Section */
+.about-content p {
+    font-family: 'Handlee', cursive;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000000;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat h3 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2.5rem;
+    color: #E43636;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Research Grid */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.research-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.research-card {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.research-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.research-card h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.research-card p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.learn-more {
+    font-family: 'Caveat Brush', cursive;
+    color: #E43636;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.research-card:hover .learn-more {
+    color: #000000;
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 2rem;
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0 auto 1rem;
+}
+
+.team-member h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+}
+
+.team-collaborators {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background: #E2DDB4;
+    border-radius: 12px;
+}
+
+.team-collaborators h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.team-collaborators p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Publications */
+.publications-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.publication {
+    padding: 2rem;
+    border-left: 4px solid #E43636;
+    margin-bottom: 2rem;
+    background: #E2DDB4;
+    border-radius: 0 8px 8px 0;
+}
+
+.publication h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 0.5rem;
+}
+
+.authors {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 0.25rem;
+}
+
+.journal {
+    font-family: 'Caveat Brush', cursive;
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: 'Handlee', cursive;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    background-color: #F6EFD2;
+    color: #000000;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #E43636;
+    box-shadow: 0 0 0 3px rgba(228, 54, 54, 0.1);
+}
+
+/* Footer */
+.footer {
+    background: #E2DDB4;
+    color: #000000;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-brand {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .university-logo {
+        height: 40px;
+    }
+
+    .lab-info h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .hero-logos {
+        gap: 2rem;
+    }
+
+    .hku-emblem,
+    .dept-logo {
+        height: 60px;
+    }
+
+    .hero {
+        padding: 6rem 0 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Sub-page Styles */
+.hero-subpage {
+    background: #E2DDB4;
+    color: #000000;
+    padding: 8rem 0 4rem;
+    margin-top: 80px;
+}
+
+.breadcrumb {
+    font-family: 'Caveat Brush', cursive;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #E43636;
+}
+
+.breadcrumb a {
+    color: #E43636;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.hero-subpage h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #E43636;
+}
+
+.subpage-subtitle {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 800px;
+}
+
+.content-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.main-content h2 {
+    font-family: 'Rock Salt', cursive;
+    color: #E43636;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+.main-content h2.gloria-title {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.main-content h2:first-child {
+    margin-top: 0;
+}
+
+.main-content h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.main-content h4 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-content p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.main-content ul {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    padding-left: 1.5rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2.5rem;
+    color: #E43636;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.stat-card p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
+}
+
+.staging-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.stage-item {
+    background: #E2DDB4;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #E43636;
+}
+
+.research-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.research-area {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.research-area h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-top: 0;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.treatment-item {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.treatment-item h4 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-top: 0;
+}
+
+.sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.sidebar-card {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.sidebar-card h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.sidebar-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-card li {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #000000;
+}
+
+.sidebar-card li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-card p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.publication-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.publication-item h4 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.publication-item p {
+    font-family: 'Handlee', cursive;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+/* Responsive Design for Sub-pages */
+@media (max-width: 1024px) {
+    .content-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-subpage h1 {
+        font-size: 2.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .research-areas,
+    .treatment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staging-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Team Page Styles */
+.team-overview {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.team-overview p {
+    font-family: 'Handlee', cursive;
+    font-size: 1.1rem;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.team-section {
+    margin-bottom: 5rem;
+}
+
+.team-section h2 {
+    font-family: 'Rock Salt', cursive;
+    color: #E43636;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 3px solid #E43636;
+    padding-bottom: 1rem;
+}
+
+.team-section h2.gloria-title {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-member {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.member-photo.professor {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.member-photo.coordinator {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.member-photo.lab-staff {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+}
+
+.member-photo.postdoc {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.member-photo.phd {
+    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+}
+
+.team-member h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member .title {
+    font-family: 'Caveat Brush', cursive;
+    color: #E43636;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member .department {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.team-member .expertise {
+    font-family: 'Handlee', cursive;
+    color: #E43636;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.recruitment-notice {
+    background: #E2DDB4;
+    border-left: 4px solid #E43636;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.recruitment-notice h4 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+}
+
+.recruitment-notice p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    margin: 0;
+}
+
+.student-programs {
+    display: grid;
+    gap: 3rem;
+}
+
+.program-category {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.program-category h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+}
+
+.program-category p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.program-category ul {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    padding-left: 1.5rem;
+}
+
+.program-category li {
+    margin-bottom: 0.5rem;
+}
+
+.current-students {
+    margin-top: 2rem;
+}
+
+.current-students h4 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.student-project {
+    background: #E2DDB4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #E43636;
+}
+
+.student-project h5 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 0.5rem;
+}
+
+.student-project p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.alumni-section {
+    background: #E2DDB4;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+}
+
+.alumni-intro {
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    color: #000000;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alumni-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.alumni-category h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.alumnus {
+    background: #F6EFD2;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.alumnus h4 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 0.5rem;
+}
+
+.alumnus p {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.alumnus em {
+    font-family: 'Handlee', cursive;
+    color: #E43636;
+    font-size: 0.9rem;
+}
+
+.alumni-achievements {
+    background: #F6EFD2;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #E43636;
+}
+
+.alumni-achievements h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+}
+
+.alumni-achievements ul {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    padding-left: 1.5rem;
+}
+
+.alumni-achievements li {
+    margin-bottom: 0.5rem;
+}
+
+.collaborator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.collaborator-category {
+    background: #E2DDB4;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.collaborator-category h3 {
+    font-family: 'Gochi Hand', cursive;
+    color: #E43636;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.collaborator-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.collaborator-category li {
+    font-family: 'Handlee', cursive;
+    color: #000000;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #000000;
+    font-size: 0.9rem;
+}
+
+.collaborator-category li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design for Team Page */
+@media (max-width: 768px) {
+    .team-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .alumni-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .collaborator-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
